@@ -52,5 +52,6 @@ footer {
 main {
     background-color: #333333;
     margin: 0px;
-    min-height: 100vh;
+    padding: 3.5em 1em;
+    min-height: 95vh;
 }
