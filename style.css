@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    background-color: gray;
+    color: black;
+}
+
+.name {
+    font-size: xx-large
+}
+
+.links {
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+    margin: -0.5em;
+}
+
+.links > * {
+    color: white;
+}
+
+footer {
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.social > * {
+    color: white;
+}
+
+main {
+    background-color: #333333;
+    margin: 0px;
+    min-height: 100vh;
+}
