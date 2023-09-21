@@ -6,13 +6,17 @@
 }
 
 html, body {
-    height: 100%;
     background-color: black;
+    height: 100%;
     color: white;
     max-width: 900px;
     margin: 0 auto;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
 .header-wrapper {
@@ -65,9 +69,60 @@ footer {
 }
 
 main {
-    z-index: 1;
     background-color: #333333;
-    margin: 0px;
     padding: 1em 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > * {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em;
+}
+
+.form-name, .form-email {
     flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.form-message {
+    flex-basis: 100%;
+}
+
+.form-message > textarea {
+    min-height: 10em;
+}
+
+.form-submit {
+    width: 10em;
+    margin-left: auto;
+}
+
+input[type="submit"] {
+    padding: 0 0.2em;
+}
+
+
+@media (max-width: 483px) {
+    header {
+        flex-direction: column;
+        padding: 0.4em;
+    }
+
+    form {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .form-submit {
+        width: auto;
+        margin-left: 0;
+    }
 }
